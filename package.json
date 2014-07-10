@@ -1,0 +1,26 @@
+{
+  "name": "pigeondroppingsnode",
+  "version": "0.0.0",
+  "description": "Pigeon Dropping written in NodeJS",
+  "main": "hardiarl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HS",
+  "license": "ISC",
+  "bin": {
+    "hardiarl": "hardiarl.js"
+  },
+  "dependencies": {
+    "commander": "~2.2.0",
+    "chalk": "~0.5.1",
+    "aws-sdk": "~2.0.5"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-jsonlint": "~1.0.4",
+    "load-grunt-tasks": "~0.6.0"
+  }
+}
