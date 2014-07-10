@@ -8,10 +8,10 @@ module.exports = function(grunt){
             }
         },
         jshint:{
-            all:['Gruntfile.js','src/*.js']
+            all:['Gruntfile.js','*.js']
         },
         watch: {
-            files: ['Gruntfile.js', 'hardiarl.js'],
+            files: ['Gruntfile.js', 'index.js'],
             tasks: "default"
         }
     });

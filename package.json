@@ -1,15 +1,15 @@
 {
-  "name": "pigeondroppingsnode",
+  "name": "ec2namesearch",
   "version": "0.0.0",
-  "description": "Pigeon Dropping written in NodeJS",
-  "main": "hardiarl.js",
+  "description": "Search for your EC2 instances",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "HS",
+  "author": "singh1469@gmail.com",
   "license": "ISC",
   "bin": {
-    "hardiarl": "hardiarl.js"
+    "ec2namesearch": "index.js"
   },
   "dependencies": {
     "commander": "~2.2.0",
