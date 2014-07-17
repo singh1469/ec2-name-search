@@ -6,7 +6,6 @@
 *   Show help if nothing is entered
 *   Enable -q for query option/command
 *   Implement design pattern pub/sub
-*   Add param option for region
 *   Release
 
 Inspired by the python based [Pigeon-droppings](https://github.com/jujhars13/pigeon-droppings "Pigeon Droppings")
