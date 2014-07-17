@@ -9,4 +9,4 @@
 *   Add param option for region
 *   Release version 1
 
-Inspired by [Pigeon-droppings](https://github.com/jujhars13/pigeon-droppings "Pigeon Droppings")
+Inspired by the python based [Pigeon-droppings](https://github.com/jujhars13/pigeon-droppings "Pigeon Droppings")
