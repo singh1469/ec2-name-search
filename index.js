@@ -49,5 +49,3 @@ process.on('', function () {
     console.log(chalk.green('use -h | --helper for help'));
     process.exit(0);
 });
-
-program.parse(process.argv);
