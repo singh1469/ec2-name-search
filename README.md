@@ -3,7 +3,7 @@
 ##This is work in progress
 
 ##TODO
-*   Test by removing environment variables
+*   Create test for auth.js module?
 *   Create test for search.js module
 *   Release
 

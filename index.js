@@ -22,14 +22,23 @@ program
     .parse(process.argv);
 
 if (program.query) {
-    var aws_key = auth.getKey(program.key.value); //get aws key
-    var aws_secret = auth.getSecret(program.secret.value); //get aws secret
-    var aws_region = program.region.toLowerCase().trim();
-    if (aws_key === '' || aws_secret === '') {
-        console.log(chalk.red.bold('please add AWS_ACCESS_KEY | AWS_SECRET_KEY as environment variables to continue'));
+    try {
+        var aws_key = auth.getKey(program.key); //get aws key
+        var aws_secret = auth.getSecret(program.secret); //get aws secret
+        var aws_region = program.region.toLowerCase().trim();
+        console.log('aws key is ' + aws_key);
+        console.log('aws secret is ' + aws_secret);
+        if (aws_key === '' || aws_secret === '') {
+            console.log(chalk.red.bold('To continue, add [AWS_ACCESS_KEY_ID] [AWS_SECRET_ACCESS_KEY] as environment variables OR pass in using parameters'));
+            process.exit(0);
+        }
+        //perform aws ec2 instance search
+        search.instances(program.query, aws_key, aws_secret, aws_region);
     }
-    //perform aws ec2 instance search
-    search.instances(program.query, aws_region);
+    catch (e) {
+        console.log(chalk.red.bold(e.message));
+        process.exit(1);
+    }
 }
 else {
     program.help();
