@@ -26,8 +26,6 @@ if (program.query) {
         var aws_key = auth.getKey(program.key); //get aws key
         var aws_secret = auth.getSecret(program.secret); //get aws secret
         var aws_region = program.region.toLowerCase().trim();
-        console.log('aws key is ' + aws_key);
-        console.log('aws secret is ' + aws_secret);
         if (aws_key === '' || aws_secret === '') {
             console.log(chalk.red.bold('To continue, add [AWS_ACCESS_KEY_ID] [AWS_SECRET_ACCESS_KEY] as environment variables OR pass in using parameters'));
             process.exit(0);
@@ -43,9 +41,3 @@ if (program.query) {
 else {
     program.help();
 }
-
-//exit on ctl-c
-process.on('', function () {
-    console.log(chalk.green('use -h | --helper for help'));
-    process.exit(0);
-});
