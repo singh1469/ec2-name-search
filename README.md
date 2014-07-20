@@ -1,6 +1,7 @@
 #EC2 Name Search
 
-NodeJS CLI utility that gets the DNS names of your Amazon Web services EC2 instances based on the name you supply.
+Utility that gets the DNS names of your Amazon Web services EC2 instances based on the name you supply.
+This a CLI utility powered by [NodeJS](http://nodejs.org "Node JS")
 
 ##Usage
 `ec2namesearch -q api.bar.foo`
