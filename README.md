@@ -1,13 +1,13 @@
 #EC2 Name Search
 
-Utility that gets the DNS names of your Amazon Web services EC2 instances based on the name you supply.
+NodeJS CLI utility that gets the DNS names of your Amazon Web services EC2 instances based on the name you supply.
 
 ##Usage
 `ec2namesearch -q api.bar.foo`
 
 ##Requirements
 
-*   NodeJS must be installed globally.
+*   [NodeJS](http://nodejs.org "Node JS") must be installed globally.
 *   Set environment variable called AWS_ACCESS_KEY_ID
 *   Set environment variable called AWS_SECRET_ACCESS_KEY
 
