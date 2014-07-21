@@ -78,7 +78,9 @@ instances = function (queryString, awsKey, awsSecret, awsRegion) {
  * @return int 1|0
  */
 function filter(el, queryString) {
-    if (typeof el !== 'object' || typeof el.Instances instanceof Array || el.Instances.length < 1) {
+    //Make sure el is not null
+    //check if el value is null first because null is of type object
+    if (el === null || typeof el !== 'object' || typeof el.Instances instanceof Array || el.Instances.length < 1) {
         throw new Error('el param must be an object with an Instances property with an array value');
     }
     if (typeof queryString !== 'string' || queryString.trim() === '') {
