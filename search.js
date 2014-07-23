@@ -112,10 +112,10 @@ function filter(el, queryString) {
  */
 function find(needle, haystack) {
     if (typeof needle !== 'string' || needle.trim() === '') {
-        throw new Error('needle param must be a non-empty string');
+        throw new Error('first param must be a non-empty string');
     }
     if (typeof haystack !== 'string' || haystack.trim() === '') {
-        throw new Error('haystack param must be a non-empty string');
+        throw new Error('second param must be a non-empty string');
     }
     var is_match = (haystack.indexOf(needle) === -1) ? false : true;
     return is_match;

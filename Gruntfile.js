@@ -10,7 +10,16 @@ module.exports = function(grunt){
         jshint:{
             all:['Gruntfile.js','*.js']
         },
+        'mochaTest': {
+            options: {
+                'reporter': 'spec'
+            },
+            all: ['test/**/*.js']
+        },
         watch: {
+            options:{
+                atBegin:true
+            },
             files: ['Gruntfile.js', 'index.js', 'auth.js', 'search.js'],
             tasks: "default"
         }
@@ -20,5 +29,5 @@ module.exports = function(grunt){
     require('load-grunt-tasks')(grunt);
 
     //Default grunt
-    grunt.registerTask('default', ['jsonlint','jshint']);
+    grunt.registerTask('default', ['jsonlint','jshint','mochaTest']);
 };
