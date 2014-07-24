@@ -3,10 +3,6 @@
  * Test custom module Search.js
  */
 
-/**
- * Test search.instances()
- */
-
 var mocha = require('mocha');
 var chai = require('chai');
 var search = require('../../search');
@@ -22,7 +18,7 @@ describe('Test module Search', function () {
      */
     describe('search.instances should exist', function () {
         it('should have a property called instances', function () {
-            assert.property(search,'instances');
+            assert.property(search, 'instances');
         });
     });
 
@@ -135,7 +131,5 @@ describe('Test module Search', function () {
                 });
             })
         });
-
     });
-
 });
