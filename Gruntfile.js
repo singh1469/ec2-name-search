@@ -14,7 +14,7 @@ module.exports = function(grunt){
             options: {
                 reporter: 'spec'
             },
-            src: ['test/**/auth.js']
+            src: ['test/**/*.js']
         },
         watch: {
             options:{

@@ -43,13 +43,6 @@ describe('Test module Auth', function () {
                     auth.getKey(aws_key);
                 }, 'param_key must be a non-empty string');
             });
-
-            it('should throw exception when param key is an empty string', function () {
-                assert.throws(function () {
-                    var aws_key = ' ';
-                    auth.getKey(aws_key);
-                }, 'param_key must be a non-empty string');
-            });
         });
     });
 
@@ -62,13 +55,6 @@ describe('Test module Auth', function () {
             it('should throw exception when param secret is not a string', function () {
                 assert.throws(function () {
                     var aws_secret = {};
-                    auth.getSecret(aws_secret);
-                }, 'param_secret must be a non-empty string');
-            });
-
-            it('should throw exception when param secret is an empty string', function () {
-                assert.throws(function () {
-                    var aws_secret = ' ';
                     auth.getSecret(aws_secret);
                 }, 'param_secret must be a non-empty string');
             });

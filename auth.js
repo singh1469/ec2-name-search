@@ -9,7 +9,7 @@
  * @returns aws access key
  */
 getKey = function (param_key) {
-    if (typeof param_key !== 'string' || param_key.trim() === '') {
+    if (typeof param_key !== 'string') {
         throw new Error('param_key must be a non-empty string');
     }
     param_key = param_key.trim();
@@ -28,7 +28,7 @@ getKey = function (param_key) {
  * @returns aws access key
  */
 getSecret = function (param_secret) {
-    if (typeof param_secret !== 'string' || param_secret.trim() === '') {
+    if (typeof param_secret !== 'string') {
         throw new Error('param_secret must be a non-empty string');
     }
     param_secret = param_secret.trim();
