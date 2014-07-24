@@ -10,6 +10,10 @@ var chalk = require('chalk');
  * Attempt to get aws key as variable from the environment or as passed in using the passed in param
  * @param param_key command line param for aws key
  * @returns aws access key
+ * @throws Error queryString param must be a non-empty string
+ * @throws Error awsKey param must be a non-empty string
+ * @throws Error awsSecret param must be a non-empty string
+ * @throws Error awsRegion param must be a non-empty string
  */
 instances = function (queryString, awsKey, awsSecret, awsRegion) {
     if (typeof queryString !== 'string' || queryString.trim() === '') {

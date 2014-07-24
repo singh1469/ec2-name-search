@@ -7,10 +7,11 @@
  * Attempt to get aws key as variable from the environment or as passed in using the passed in param
  * @param param_key command line param for aws key
  * @returns aws access key
+ * @throws Error param_key must be a string
  */
 getKey = function (param_key) {
     if (typeof param_key !== 'string') {
-        throw new Error('param_key must be a non-empty string');
+        throw new Error('param_key must be a string');
     }
     param_key = param_key.trim();
     //attempt to get key from environment variable
@@ -26,10 +27,11 @@ getKey = function (param_key) {
  * Attempt to get aws secret as variable from the environment or as passed in using the passed in param
  * @param param_secret command line param for aws secret
  * @returns aws access key
+ * @throws Error param_secret must be a string
  */
 getSecret = function (param_secret) {
     if (typeof param_secret !== 'string') {
-        throw new Error('param_secret must be a non-empty string');
+        throw new Error('param_secret must be a string');
     }
     param_secret = param_secret.trim();
     //attempt to get secret from environment variable

@@ -41,7 +41,7 @@ describe('Test module Auth', function () {
                 assert.throws(function () {
                     var aws_key = {};
                     auth.getKey(aws_key);
-                }, 'param_key must be a non-empty string');
+                }, 'param_key must be a string');
             });
         });
     });
@@ -56,7 +56,7 @@ describe('Test module Auth', function () {
                 assert.throws(function () {
                     var aws_secret = {};
                     auth.getSecret(aws_secret);
-                }, 'param_secret must be a non-empty string');
+                }, 'param_secret must be a string');
             });
         });
     });
