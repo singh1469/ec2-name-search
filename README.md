@@ -21,4 +21,3 @@ Inspired by the python based [Pigeon-droppings](https://github.com/jujhars13/pig
 
 ##TODO
 *   Create test for auth.js module?
-*   Create test for search.js module
