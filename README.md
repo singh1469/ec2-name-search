@@ -11,8 +11,8 @@ This is a command line utility powered by [NodeJS](http://nodejs.org "Node JS").
 ##Requirements
 
 *   [NodeJS](http://nodejs.org "Node JS") must be installed globally
-*   Set environment variable called `AWS_ACCESS_KEY_ID`
-*   Set environment variable called `AWS_SECRET_ACCESS_KEY`
+*   Set environment variable called `AWS_ACCESS_KEY`
+*   Set environment variable called `AWS_SECRET_KEY`
 *   Linux/OSX support only
 
 ##License
