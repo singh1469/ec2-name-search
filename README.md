@@ -5,8 +5,19 @@
 Utility that gets the DNS names of your Amazon Web services EC2 instances based on the name you supply.
 This is a command line utility powered by [NodeJS](http://nodejs.org "Node JS").
 
+##Install
+- `git clone /path/to/github/repo`
+- `cd /clone/path/`
+- `npm install`
+
 ##Usage
-`ec2namesearch -q api.bar.foo`
+`index.js -q api.bar.foo`
+
+##Docker support
+https://hub.docker.com/r/singh1469/ec2-name-search/
+
+#grab your api key
+coming soon..
 
 ##Requirements
 
@@ -16,6 +27,11 @@ This is a command line utility powered by [NodeJS](http://nodejs.org "Node JS").
 *   Linux/OSX support only
 
 ##License
+
+- re-organise app to docker format i.e. app directory
+- fix tests
+- create dockerfile
+- test
 
 MIT licensed.
 
