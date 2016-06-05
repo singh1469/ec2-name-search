@@ -32,11 +32,6 @@ docker run -e AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> -e AWS_SECRET_ACCESS_KEY=<AW
 
 ##License
 
-- re-organise app to docker format i.e. app directory
-- fix tests
-- create dockerfile
-- test
-
 MIT licensed.
 
 Inspired by the python based [Pigeon-droppings](https://github.com/jujhars13/pigeon-droppings "Pigeon Droppings")
