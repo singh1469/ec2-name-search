@@ -8,13 +8,20 @@ This is a command line utility powered by [NodeJS](http://nodejs.org "Node JS").
 ##Install
 - `git clone /path/to/github/repo`
 - `cd /clone/path/`
+- `cd app`
 - `npm install`
 
 ##Usage
-`index.js -q api.bar.foo`
+`node index.js -q api.bar.foo`
 
 ##Docker support
+This utility can also run as a Docker container.
 https://hub.docker.com/r/singh1469/ec2-name-search/
+```
+#grab your api key
+cd /path/to/repo
+docker run -e AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> -e AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> singh1469/ec2-name-search ./run.sh -q api.foo.bar
+```
 
 #grab your api key
 coming soon..
@@ -22,8 +29,8 @@ coming soon..
 ##Requirements
 
 *   [NodeJS](http://nodejs.org "Node JS") must be installed globally
-*   Set environment variable called `AWS_ACCESS_KEY`
-*   Set environment variable called `AWS_SECRET_KEY`
+*   Set environment variable called `AWS_ACCESS_KEY_ID`
+*   Set environment variable called `AWS_SECRET_ACCESS_KEY`
 *   Linux/OSX support only
 
 ##License
