@@ -23,9 +23,6 @@ cd /path/to/repo
 docker run -e AWS_ACCESS_KEY_ID=<AWS_ACCESS_KEY_ID> -e AWS_SECRET_ACCESS_KEY=<AWS_SECRET_ACCESS_KEY> singh1469/ec2-name-search ./run.sh -q api.foo.bar
 ```
 
-#grab your api key
-coming soon..
-
 ##Requirements
 
 *   [NodeJS](http://nodejs.org "Node JS") must be installed globally
